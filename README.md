@@ -20,10 +20,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - Turn long html strings into modular reusable components
 - Implement scroll to top button
 
-# Vue Front End development framework to showcase wireframes
-
-This is a Vuejs framework for front end developers at Whereoware. It helps develop faster and efficient user interfaces. It's a work in progress that will evolve as projects demand new functionality
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
