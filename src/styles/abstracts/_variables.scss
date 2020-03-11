@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+// ----------------------------------------------------------
+//// Wireframe Wide colors referenced on style guide ///
+// ----------------------------------------------------------
+
+/// BLack
+/// @type Color
+$black:#000000;
+$black-opaque: #353535;
+
+/// White
+/// @type Color
+$white:#FFFFFF;
+$white-opaque: #f1f1f1;
+
+/// Green
+/// @type Color
+$green:#429147;
+$green-opaque: #429147a1;
+$green-dark: #306d34;
+
+/// Red
+/// @type Color
+$red:#de0000;
+$red-opaque: #de000091;
+
+/// Brown Grey
+/// @type Color
+$brown-grey:#888888;
+$brown-grey-opaque: #d0d0d0;
+
+/// Light Pink
+/// @type Color
+$light-pink:#d0d0d0;
+$light-pink-opaque: #d0d0d07a;
+
+/// Greyish Brown
+/// @type Color
+$greyish-brown:#454545;
+$greyish-brown-opaque: #4545458c;
+
+/// Add to cart Thumbnail selective random grey
+$grey-thumbnail: #2c2b2b;
+
+/// Sass Variable
+/// @type Color
+$sass-variable: #7d7d7d;
+
+/// Wireframe Content background
+/// @type Color
+$content-background: #f0f0f0;
+$content-pov: #d9d9d9;
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

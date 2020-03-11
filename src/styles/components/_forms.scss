@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the forms component. Form input styles are referenced from Boostrap styles and restructured to meet the wireframe standards.
+// -----------------------------------------------------------------------------
+
+
+.form-control {
+    width: 330px;
+    height: 52px;
+    border: solid 1px $brown-grey-opaque;
+}
+
+.elements-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    width: 50%;
+
+    ul {
+        text-align: left;
+        width: 100%;
+
+        li:not(:first-child)  {
+            margin-top: 20px;
+        }
+    }
+
+    input[type=text] {
+        color: $black;
+    }
+
+    .is-valid {
+        border-radius: 3px;
+        border: solid 2px $green;
+        font-size: 1.375rem !important;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-color: $white;
+        background-position: 97% 50%;
+    }
+
+    .is-invalid {
+        border-radius: 3px;
+        border: solid 2px $red;
+        font-size: 1.375rem !important;
+        background-color: $white;
+    }
+    
+
+    .form-control {
+        font-family: $open-sans;
+        font-size: 1rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: 0.16px;
+        text-align: left;
+
+        &:focus, &__focus {
+            border: solid 1px $black;
+            box-shadow: none;
+        }
+
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $brown-grey;
+        }
+
+        &::-moz-placeholder { /* Firefox 19+ */
+        color: $brown-grey;
+        }
+
+        &:-ms-input-placeholder { /* IE 10+ */
+        color: $brown-grey;
+        }
+
+        &:-moz-placeholder { /* Firefox 18- */
+        color: $brown-grey;
+        }
+
+        &__label {
+            font-family: $raleway;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.31;
+            letter-spacing: 0.26px;
+            text-align: left;
+            text-transform: uppercase;
+
+            sup {
+                top: -0.1875rem;
+                left: -2px;
+                font-size: 75%;
+                font-family: $open-sans;
+            }
+        }
+    }
+
+    .font-descripion {
+
+    }
+}

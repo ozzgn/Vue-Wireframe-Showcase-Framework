@@ -1,0 +1,511 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the main content container.
+// -----------------------------------------------------------------------------
+
+.main-content {
+    width: 100%;
+    padding: 0.4rem 0;
+
+    .read-me {
+        width: 86%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding-top: 20px !important;
+
+        ul {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__top {
+        top: 0;
+        margin: 0 20px;
+        height: 34px;
+        background: $white;
+        z-index: 1000;
+
+        .menu-toggle-btn-desktop {
+            top: -9px;
+            height: 32px;
+        }
+    }
+    
+    &__title {
+        font-size: 1em;
+        margin: 8px 0 8px 15px;
+        border-bottom: none;
+    }
+    .style-title {
+        width: 100%;
+    }
+
+    &__header {
+        height: 157px;
+        padding: 52px;
+        text-align: center;
+        font-family: $open-sans;
+        font-size: 1.875rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        background-color: $content-background;
+    }
+
+    &__footer {
+        height: 308px;
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+        float: left;
+        padding: 130px;
+        text-align: center;
+        font-family: $open-sans;
+        font-size: 1.875rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        background-color: $content-background;
+    }
+
+    .body {
+        &__container {
+            max-width: 1458px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0px 24px;
+
+            .breadcrumb {
+                background: none;
+                padding-top: 20px;
+                margin-bottom: 0px;
+                padding-bottom: 9px;
+                padding-left: 0px;
+                font-family: $open-sans;
+                font-size: 0.8125rem;
+    
+                .active {
+                    font-weight: bold; 
+                    color: $black;
+                }
+            }
+
+            .breadcrumb-item+.breadcrumb-item {
+                padding-left: .4rem;
+            }
+        }
+        
+        &__main-pov {
+            background-color: $content-pov;
+            height: 231px;
+        }
+
+        &__product-content {
+            padding-top: 24px;
+            width: 100%;
+
+            .left-navigation {
+                width: 100%;
+                padding-right: 0.8%;
+                width: 21%;
+                float: left;
+
+                .title {
+                    padding-bottom: 14px;
+                    border-bottom: 1.5px solid #6f6e6d54;
+                    text-transform: uppercase;
+                }
+
+                .fa {
+                    font-size: 0.8125rem;
+                    float: right;
+                    padding-right: 5%;
+                }
+
+                li {
+                    font-family: $open-sans;
+                    font-size: 0.8125rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.46;
+                    letter-spacing: normal;
+                    padding: 1rem 0px;
+                    border-bottom: 1.5px solid #6f6e6d54;
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                }
+
+                .filter-selection {
+                    flex-flow: wrap;
+                    justify-content: flex-start;
+                    padding: 1rem 0 4px 0;
+
+                    &__container {
+                        padding: 1px 12px;
+                        border-radius: 12px;
+                        border: solid 1px #e6e6e6;
+                        margin-bottom: 14px;
+                        margin-right: 10px;
+
+                        span {
+                            margin-left: 3px;
+                        }
+                    }
+
+                    a {
+                        font-size: 13px;
+
+                        &:hover, &:active, &:focus {
+                            text-decoration: none;
+                            font-weight: bold;
+                            border: none;
+                        }
+
+                        &:hover .filter-selection {
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+
+                .filter-clear {
+                    background-color: #e6e6e6;
+                }
+            }
+
+            .right-content {
+                width: 79%;
+                padding-left: 3.5%;
+                float: left;
+
+                .header-content {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .text-disclaimer {
+                    p {
+                        font-size: 0.8125rem;
+                        margin-bottom: 28px;
+                    } 
+                }
+
+                .paginator {
+                    width: 258px;
+                    margin: 0 auto;
+                }
+
+                .page-item {
+                    margin-right: 8px;
+
+                    .active{
+                        font-weight: bold;
+                    }
+                }
+                
+                .page-link {
+                    color: $black;
+                    border: none;
+
+                    &__arrow {
+                        font-size: 1.625rem;
+                        border-radius: 0px;
+                        padding: 0px;
+                        text-align: center;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid #dee2e6;
+
+                        &:hover {
+                            text-decoration: none !important;
+                        }
+
+                        .arrow-icon {
+                            position: relative;
+                            top: -5px;
+                        }
+                    }
+                    
+                    &:hover {
+                        color: $black;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        background-color: $white;
+                        border-color: $black;
+                    }
+
+                    &:active {
+                        font-weight: bold;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                        text-decoration: none;
+                    }
+                }
+
+                .left-dropdown {
+                    display: flex;
+                    margin-left: 1%;
+
+                    .dropdown {
+                        text-align: left;
+                        margin-right: 10px;
+                    }
+
+                    .product-availabilty {
+                        font-size: 0.8125rem;
+                        background-color: #f0f0f0;
+                        padding: 10px 17px;
+                        height: 38px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 19px;
+
+                        span {
+                            font-weight: bold;
+                            margin-left: 6px;
+                        }
+                    }
+
+                    .dropdown-info {
+                        padding-right: 11px;
+                        font-weight: bold;
+                    }
+                }
+
+                .right-dropdown {
+                    .dropdown {
+                        text-align: right;
+                        margin-bottom: 18px;
+                    }
+                }
+
+                .dropdown {
+                    text-align: right;
+                    margin-bottom: 18px;
+                }
+
+                .dropdown-toggle {
+                    background-color: $white;
+                    color: $black;
+                    font-family: $open-sans;
+                    font-size: 0.8125rem;
+                    border-color: #d6d6d6;
+                    padding: 8.5px 10.33px;
+                    margin-right: 8px;
+
+                    &::after {
+                        margin-left: 1em;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .dropdown-info {
+                    font-family: $open-sans;
+                    font-size: 0.8125rem;
+                    line-height: 1.46;
+                }
+
+                .product {
+                    &__container {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        font-size: 0.8125rem;    
+                    }
+
+                    &__image {
+                        margin-bottom: 1rem;
+                    } 
+                    
+                    &__thumbnail {
+                        margin: 0 0 0 1%;
+                        text-align: center;
+                        font-family: $open-sans;
+                        width: 31%;
+
+                        img {
+                            width: 100%;
+                        }
+
+                         .brand-pov {
+                            width: 100%;
+                            position: relative;
+
+                            .favorite-icon {
+                                font-size: 1.1875rem;
+                                background-color: $white;
+                                position: absolute;
+                                top: 7px;
+                                right: 5px;
+                                height: 27px;
+                                width: 27px;
+                                opacity: 0.8;
+                                border-radius: 20px;
+                            }
+
+                            .product-status {
+                                position: absolute;
+                                display: flex;
+                                    
+                                &__message {
+                                    text-transform: uppercase;
+                                    font-weight: bold;
+                                    height: 17px;
+                                    padding: 1px 4px;
+                                    background-color: $greyish-brown;
+                                    color: $white;
+                                    outline: none;
+                                    margin-right: 5px;
+                                    letter-spacing: 0.1px;
+                                    font-size: 0.625rem;
+                                    font-stretch: normal;
+                                    font-style: normal;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .brand-content {
+                            margin-bottom: 2.1875rem;
+                            line-height: 22px;
+
+                             &__name {
+                                 color: $brown-grey;
+                             }
+
+                             &__title {
+                                font-size: 1rem;
+                                font-weight: 600;
+                             }
+
+                             &__price {
+                                 font-size: 1rem;
+                                 margin-top: 12px;
+                             }
+                        }
+
+                        .product-addtocart {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 15px;
+                            margin-bottom: 48px;
+
+                            &__button {
+                                width: 58.5%;
+                            }
+
+                            &__counter {
+                                width: 34%;
+
+                                .number-input input[type="number"] {
+                                    -webkit-appearance: textfield;
+                                    -moz-appearance: textfield;
+                                    appearance: textfield;
+                                }
+                                
+                                .number-input input[type=number]::-webkit-inner-spin-button,
+                                .number-input input[type=number]::-webkit-outer-spin-button {
+                                    -webkit-appearance: none;
+                                }
+                                
+                                .number-input {
+                                    height: 52px;
+                                    border: 1px solid $light-pink;
+                                    display: flex;
+                                    width: 100%;
+                                    padding: 0 7px;
+                                    min-width: 68px;
+                                }
+                                
+                                .number-input button {
+                                    -webkit-appearance: none;
+                                    background-color: transparent;
+                                    border: none;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    margin: 0;
+                                    position: relative;
+
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+                                
+                                .number-input button:before,
+                                .number-input button:after {
+                                    display: inline-block;
+                                    position: absolute;
+                                    content: '';
+                                    height: 2px;
+                                    transform: translate(-50%, -50%);
+                                }
+                                
+                                .number-input button.plus:after {
+                                    transform: translate(-50%, -50%) rotate(90deg);
+                                }
+                                
+                                .number-input input[type=number] {
+                                    text-align: center;
+                                }
+                                
+                                .number-input .number-input {
+                                    border: 1px solid #ced4da;
+                                    width: 10rem;
+                                    border-radius: .25rem;
+                                }
+
+                                button.minus, button.plus {
+                                    width: 20%;
+                                    position: relative;
+                                    height: 52px;
+                                }
+                                
+                                .number-input.number-input button.minus {
+                                    padding-left: 0px;
+                                    width: 20%;
+                                }
+                                
+                                .number-input.number-input button:before,
+                                .number-input.number-input button:after {
+                                    width: .7rem;
+                                    background-color: #495057;
+                                }
+                                
+                                .number-input.number-input input[type=number] {
+                                    width: 60%;
+                                    padding: 16px 10px;
+                                    border: 0;
+                                    border-width: 0 1px;
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                }
+                                  
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+  

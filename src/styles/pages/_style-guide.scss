@@ -1,0 +1,281 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the style guide page.
+// -----------------------------------------------------------------------------
+
+.style-guide {
+    background-color: #f5f5f5;
+
+    &__container {
+        width: 90%;
+        max-width: 1410px;
+        margin: 0 auto;
+        padding: 40px 0px 20px 0px;
+    }
+
+    .style-title {
+        font-weight: bold;
+        font-size: 1.53rem;
+        width: 100%;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e6e6e6;
+
+            span {
+            font-size: 1rem;
+            color: $brown-grey;
+            position: relative;
+            top: -1px;
+            font-weight: normal;
+        }
+    }
+    
+    &__typography {
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        &__container {
+            width: 92%;
+            margin: 0 auto;
+
+            li {
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+
+            .dot {
+                height: 1rem;
+                width: 1rem;
+                background-color: $black;
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                top: 3px;
+                margin: 0px 3px;
+            }
+
+            .sass-variable {
+                color: $sass-variable;
+                font-weight: 600;
+            }
+
+            .second-line {
+                font-size: 0.625rem;
+                color: $brown-grey;
+            }
+
+            .font-description {
+                font-size: 0.75rem;
+                text-align: right;
+                position: relative;
+                top: -22px;
+            }
+            
+        }
+        
+    }
+
+    &__buttons {
+        &__container {
+            width: 92%;
+            margin: 0 auto;
+            margin-top: 3rem;
+            text-align: center;
+
+            .row {
+                align-items: baseline;
+            }
+
+            .col {
+                margin-bottom: 1rem;
+            }
+
+            .font-description {
+                max-width: 17%;
+                font-size: 0.75rem;
+            }
+
+            .font-headline {
+                font-size: 0.75rem;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__form-elements {
+        &__container {
+            width: 92%;
+            margin: 0 auto;
+            margin-top: 3rem;
+            text-align: center;
+
+            .row {
+                align-items: baseline;
+            }
+
+            .col {
+                margin-bottom: 1rem;
+            }
+
+            .font-description {
+                max-width: 17%;
+                font-size: 0.875rem;
+            }
+
+            .font-headline {
+                font-size: 0.875rem;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 28%;
+        margin: 12px 0%;
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+
+        .card-title {
+            margin-bottom: .4rem;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .card-text {
+            font-size: 0.7em;
+            color: grey;
+            float: left;
+            margin-right: 7px;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }    
+
+        .card-color {
+            width: 100%;
+            height: 68px;
+        }
+
+        .card-title {
+            font-family: $open-sans;
+        }
+
+        .color-box {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+
+        .black-color {
+            background-color: $black;
+
+            &__opaque {
+                background-color: $black-opaque;
+            }
+        }
+
+        .white-color {
+            background-color: $white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+            &__opaque {
+                background-color: $white-opaque;
+            }
+        }
+
+        .green-color {
+            background-color: $green;
+
+            &__opaque {
+                background-color: $green-opaque;
+            }
+        }
+
+        .red-color {
+            background-color: $red;
+
+            &__opaque {
+                background-color: $red-opaque;
+            }
+        }
+
+        .brown-grey-color {
+            background-color: $brown-grey;
+
+            &__opaque {
+                background-color: $brown-grey-opaque;
+            }
+        }
+
+        .light-pink-color {
+            background-color: $light-pink;
+
+            &__opaque {
+                background-color: $light-pink-opaque;
+            }
+        }
+
+        .greyish-brown-color {
+            background-color: $greyish-brown;
+
+            &__opaque {
+                background-color: $greyish-brown-opaque;
+            }
+        }
+    }
+}
+
+.top-link {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      margin: 0 3em 3em 0;
+      border-radius: 50%;
+      padding: .25em;
+      width: 80px;
+      height: 80px;
+    background-color: #F8F8F8;
+    
+    &.show {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    &.hide {
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+      svg {
+          fill: #000;
+          width: 24px;
+          height: 12px;
+      }
+  
+      &:hover {
+          background-color: #E8E8E8;
+  
+          svg {
+              fill: #000000;
+          }
+      }
+  }
+  

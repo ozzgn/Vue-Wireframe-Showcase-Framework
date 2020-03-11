@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the product details page
+// -----------------------------------------------------------------------------
+
+.product-detail-page {
+    margin-top: 0.4rem;
+    display: flex;
+    font-family: $open-sans;
+    justify-content: space-between;
+
+    img {
+        width: 100%;
+    }
+
+    .product-slider {
+        width: 40.43%;
+        position: relative;
+
+        .favorite-icon {
+            font-size: 1.1875rem;
+            background-color: $white;
+            position: absolute;
+            top: 7px;
+            right: 5px;
+            height: 27px;
+            width: 27px;
+            opacity: 0.8;
+            border-radius: 20px;
+        }
+
+        .product-status {
+            position: absolute;
+            display: flex;
+                
+            &__message {
+                text-transform: uppercase;
+                font-weight: bold;
+                height: 17px;
+                padding: 1px 4px;
+                background-color: $greyish-brown;
+                color: $white;
+                outline: none;
+                margin-right: 5px;
+                letter-spacing: 0.1px;
+                font-size: 0.625rem;
+                font-stretch: normal;
+                font-style: normal;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .product-information {
+        width: 42.4%;
+        
+        .brand-name {
+            color: $brown-grey;
+        }
+        
+        &__content {
+            .label, .price {
+                display: flex;
+            }
+
+            .label {
+                margin-bottom: 1rem;
+
+                li {
+                    margin-right: 1rem;
+                }
+            }
+
+            .price {
+                font-size: 1.125rem;
+                letter-spacing: 0.36px;
+
+                li {
+                    margin-right: 0.5rem;
+                }
+
+                .strikethrough {
+                    text-decoration: line-through;
+                    font-weight: 600;
+                }
+
+                .discounted {
+                    color: $green;
+                    font-weight: bold;
+                }
+            }
+
+            .availability {
+                font-size: 0.8125rem;
+                font-weight: 600;
+                letter-spacing: 0.26px;
+            }
+        }
+    }
+
+    .product-recomendations {
+        width: 12.483%;
+    }
+    
+    .brand-content {
+        margin-bottom: 2.1875rem;
+        line-height: 22px;
+
+            &__name {
+                color: $brown-grey;
+            }
+
+            &__title {
+            font-size: 1rem;
+            font-weight: 600;
+            }
+
+            &__price {
+                font-size: 1rem;
+                margin-top: 12px;
+            }
+    }
+}
+

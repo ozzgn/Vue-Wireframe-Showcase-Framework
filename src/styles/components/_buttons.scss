@@ -1,0 +1,262 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component. Button styles are referenced from Boostrap styles and restructured to meet the wireframe standards.
+// -----------------------------------------------------------------------------
+
+.btn {
+    border-radius: 0px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 286px;
+    width: 100%;
+}
+
+.btn-dashboard {
+    font-family: $lato;
+    background-color: $white;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.28px;
+    height: 49px;
+    max-width: 286px;
+    padding: 0px;
+    border: solid 1px #cfd3d4;
+    border-left: 0px;
+    border-right: 0px;
+
+    &:hover, &__hover {
+        background-color: $green;
+        border-color: $green; 
+        color: $white;  
+    }
+
+    &:active, &__active{
+        background-color: $green-dark;
+        border-color: $green; 
+        color: $white;
+    }
+}
+
+.btn-add-to-cart {
+    background-color: black;
+    color: $white;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-family: $open-sans;
+    font-size: 0.9375rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 52px;
+    max-width: 495px;
+
+    &:hover, &__hover {
+        font-family: $open-sans;
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+
+    &:active, &__active{
+        background-color: $black;
+        border-color: $black; 
+        color: $white;
+    }
+}
+
+.btn-add-to-cart-thumbnail {
+    background-color: $grey-thumbnail;
+    color: $white;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    font-family: $lato;
+    font-size: 0.75rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 52px;
+    max-width: 193px;
+
+    &:hover, &__hover {
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+
+    &:active, &__active{
+        background-color: $grey-thumbnail;
+        border-color: $black; 
+        color: $white;
+    }
+}
+
+.btn-main-cta{
+    background-color: $black;
+    color: $white;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    font-family: $open-sans;
+    font-size: 0.8125rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 52px;
+    max-width: 150px;
+
+    &:hover, &__hover {
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+
+    &:active, &__active{
+        background-color: $black;
+        border-color: $black; 
+        color: $white;
+    }
+}
+
+.btn-small-solid-cta{
+    background-color: $black;
+    color: $white;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    font-family: $open-sans;
+    font-size: 0.8125rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 37px;
+    max-width: 212px;
+
+    &:hover, &__hover {
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+
+    &:active, &__active{
+        background-color: $black;
+        border-color: $black; 
+        color: $white;
+    }
+}
+
+.btn-secondary-cta {
+    background-color: $white;
+    border-color: $black; 
+    color: $black;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    font-family: $open-sans;
+    font-size: 0.8125rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 37px;
+    max-width: 212px;
+
+    &:hover, &__hover {
+        background-color: $black;
+        border-color: $black; 
+        color: $white;
+    }
+
+    &:active, &__active{
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+}
+
+.btn-ghost-button {
+    background-color: $white;
+    border-color: $black; 
+    color: $black;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    font-family: $open-sans;
+    font-size: 0.8125rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 52px;
+    max-width: 213px;
+
+    &:hover, &__hover {
+        background-color: $black;
+        border-color: $black; 
+        color: $white;
+    }
+
+    &:active, &__active{
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+}
+
+.btn-mini-login {
+    background-color: $black;
+    color: $white;
+    letter-spacing: 0.24px;
+    font-family: $open-sans;
+    font-size: 0.8125rem;
+    font-stretch: normal;
+    font-style: normal;
+    height: 37px;
+    max-width: 105px;
+    border-radius: 4px;
+
+    &:hover, &__hover {
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+
+    &:active, &__active{
+        background-color: $black;
+        border-color: $black; 
+        color: $white;
+    }
+    
+    .fas {
+        margin-right: 6px;
+    }
+}
+
+.btn-link-cta {
+    background-color: $grey-thumbnail;
+    color: $white;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    font-family: $lato;
+    font-size: 0.75rem;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    height: 52px;
+    max-width: 193px;
+
+    &:hover, &__hover {
+        background-color: $white;
+        border-color: $black; 
+        color: $black;
+    }
+
+    &:active, &__active{
+        background-color: $grey-thumbnail;
+        border-color: $black; 
+        color: $white;
+    }
+}
+
+
+    
