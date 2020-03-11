@@ -1,17 +1,12 @@
 # Vue-Wireframe-Showcase-Framework
 A Vue user interface designed to display wireframes to clients. With the intention in mind to implement the content into a CMS of any kind such as Episerver, Sitecore, Wordpress. 
 
-This framework was intended to help front end developers of all skill levels to showcase their user interfacees and website designs.
+This is a Vuejs framework for front end developers of all skill levels. It helps develop faster and efficient user interfaces. It's a work in progress that will evolve as projects demand new functionality. The navigational menu allows the quick change of interfaces
 
 (Work in progress)
 
-# Read Me
-This is a Vuejs framework for front end developers. It helps develop faster and efficient user interfaces. It's a work in progress that will evolve as projects demand new functionality
-
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
-   
 
 ## TO DO:
 - Solve bug with submenu
@@ -97,10 +92,6 @@ yarn run lint
 ## Deployment
 
 TBD
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
