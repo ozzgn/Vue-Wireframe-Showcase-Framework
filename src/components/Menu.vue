@@ -6,30 +6,20 @@
         <router-link to="/" class="menu__logo">
           <img src="/logo.png" alt="icon" />
         </router-link>
-        <a href="#" @click.prevent="openProjectLink" class="menu__title"
-          >Evergreen</a
-        >
+        <a href="#" @click.prevent="openProjectLink" class="menu__title">Project Title</a>
       </li>
 
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('home')"
-          :class="highlightSection('home')"
-        >
+        <a href="#" @click.prevent="updateMenu('home')" :class="highlightSection('home')">
           <i class="fa fa-home menu__icon no-child" aria-hidden="true"></i>
           Read Me
         </a>
       </li>
 
       <li>
-        <a
-          class="menu__link"
-          target="_blank"
-          href="https://whereowaredev.atlassian.net/wiki/spaces/EVG/pages/14057533/Project+Overview"
-        >
+        <a class="menu__link" target="_blank" href="#">
           <i class="fa fa-atlas menu__icon no-child" aria-hidden="true"></i>
-          Project Wiki
+          Project Info
         </a>
       </li>
 
@@ -86,17 +76,10 @@
       </div>
 
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('dashboard')"
-          :class="highlightSection('dashboard')"
-        >
+        <a href="#" @click.prevent="updateMenu('dashboard')" :class="highlightSection('dashboard')">
           <i class="fa fa-user-edit menu__icon" aria-hidden="true"></i>
           Dashboard
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
@@ -116,17 +99,10 @@
       </li>
 
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('fileclaim')"
-          :class="highlightSection('fileclaim')"
-        >
+        <a href="#" @click.prevent="updateMenu('fileclaim')" :class="highlightSection('fileclaim')">
           <i class="fa fa-cart-arrow-down menu__icon" aria-hidden="true"></i>
           File a Claim
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
@@ -158,25 +134,15 @@
         >
           <i class="fa fa-sort-amount-down menu__icon" aria-hidden="true"></i>
           Order History
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('reorder')"
-          :class="highlightSection('reorder')"
-        >
+        <a href="#" @click.prevent="updateMenu('reorder')" :class="highlightSection('reorder')">
           <i class="fa fa-history menu__icon" aria-hidden="true"></i>
           Reorder
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
@@ -188,25 +154,15 @@
         >
           <i class="fa fa-user menu__icon" aria-hidden="true"></i>
           Manage User
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('order')"
-          :class="highlightSection('order')"
-        >
+        <a href="#" @click.prevent="updateMenu('order')" :class="highlightSection('order')">
           <i class="fa fa-shopping-cart menu__icon" aria-hidden="true"></i>
           Quick Order
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
@@ -218,24 +174,14 @@
         >
           <i class="fa fa-window-restore menu__icon" aria-hidden="true"></i>
           Login Modal
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('loginpage')"
-          :class="highlightSection('loginpage')"
-        >
+        <a href="#" @click.prevent="updateMenu('loginpage')" :class="highlightSection('loginpage')">
           <i class="fa fa-sign-in-alt menu__icon" aria-hidden="true"></i>
           Login Page
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li>
@@ -246,10 +192,7 @@
         >
           <i class="fa fa-user-plus menu__icon" aria-hidden="true"></i>
           Registration
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li>
@@ -281,17 +224,10 @@
         </a>
       </li>
       <li>
-        <a
-          href="#"
-          @click.prevent="updateMenu('cart')"
-          :class="highlightSection('cart')"
-        >
+        <a href="#" @click.prevent="updateMenu('cart')" :class="highlightSection('cart')">
           <i class="fa fa-shopping-cart menu__icon" aria-hidden="true"></i>
           Cart
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li>
@@ -302,10 +238,7 @@
         >
           <i class="fa fa-clipboard-check menu__icon" aria-hidden="true"></i>
           Confirmation
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li>
@@ -316,10 +249,7 @@
         >
           <i class="fa fa-search menu__icon" aria-hidden="true"></i>
           Search
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
       <li>
@@ -330,10 +260,7 @@
         >
           <i class="fa fa-tachometer-alt menu__icon" aria-hidden="true"></i>
           DM Dashboard
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
 
@@ -345,21 +272,14 @@
         >
           <i class="fa fa-tachometer-alt menu__icon" aria-hidden="true"></i>
           TM Dashboard
-          <i
-            class="fa fa-chevron-right menu__arrow-icon"
-            aria-hidden="true"
-          ></i>
+          <i class="fa fa-chevron-right menu__arrow-icon" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
 
     <!-- context menu: childs of root level itens -->
     <transition name="slide-fade">
-      <div
-        class="context-menu-container"
-        id="context-menu-container"
-        v-show="showContextMenu"
-      >
+      <div class="context-menu-container" id="context-menu-container" v-show="showContextMenu">
         <ul class="context-menu">
           <li v-for="(item, index) in menuItens" :key="index">
             <h5 v-if="item.type === 'title'" class="context-menu__title">
@@ -380,8 +300,7 @@
               :href="item.txt"
               @click.prevent="openSection(item)"
               :class="subMenuClass(item.txt)"
-              >{{ item.txt }}</a
-            >
+            >{{ item.txt }}</a>
 
             <router-link
               v-if="item.type === 'prelogin'"
@@ -389,10 +308,7 @@
               :to="item.link"
               @click.prevent="updateMenu('styleguide')"
             >
-              <i
-                class="fa fa-th context-menu__title-icon no-child"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-th context-menu__title-icon no-child" aria-hidden="true"></i>
               {{ item.txt }}
             </router-link>
 
@@ -402,10 +318,7 @@
               :to="item.link"
               @click.prevent="updateMenu('styleguide')"
             >
-              <i
-                class="fa fa-th context-menu__title-icon no-child"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-th context-menu__title-icon no-child" aria-hidden="true"></i>
               {{ item.txt }}
             </router-link>
 

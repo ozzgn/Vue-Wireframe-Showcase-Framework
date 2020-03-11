@@ -7,7 +7,7 @@ export default { name: "Home" };
       <a href="#" class="btn menu-toggle-btn-desktop" @click.prevent="toggleMenu">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </a>
-      <h1 class="main-content__title">Whereoware VueJs Wireframes Framework - Ver 0.1</h1>
+      <h1 class="main-content__title">VueJs Wireframes Framework - Ver 0.1</h1>
     </div>
 
     <div class="main-content__body">
@@ -16,7 +16,11 @@ export default { name: "Home" };
           <li>
             <h4># Read Me</h4>
           </li>
-          <li>This is a Vuejs framework for front end developers at Whereoware. It helps develop faster and efficient user interfaces. It's a work in progress that will evolve as projects demand new functionality</li>
+          <li>
+            A Vue user interface designed to display wireframes to clients. With the intention in mind to implement the content into a CMS of any kind such as Episerver, Sitecore, Wordpress.
+            This is a Vuejs framework for front end developers of all skill levels. It helps develop faster and efficient user interfaces. It's a work in progress that will evolve as projects demand new functionality. The navigational menu allows the quick change of interfaces
+            (Work in progress)
+          </li>
         </ul>
         <ul>
           <h4>## Requirements</h4>
