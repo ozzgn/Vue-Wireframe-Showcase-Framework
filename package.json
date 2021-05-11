@@ -12,7 +12,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "vue": "^2.5.16",
     "vue-html-loader": "^1.2.4",
     "vue-router": "^3.0.1"
